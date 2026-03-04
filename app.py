@@ -16,6 +16,7 @@ from capitulos.evaluaciones_04 import evaluaciones
 from capitulos.metricas_05 import metricas
 from capitulos.ajuste_hiperparametros_06 import ajuste_hiperparametros
 from capitulos.preproceso_07 import preproceso
+from capitulos.modelos_lineales_08 import modelos_lineales
 
 def main():
     st.title("🤖 Machine Learning - Tutorial Interactivo")
@@ -34,7 +35,8 @@ def main():
             "4. Evaluación de Modelos",
             "5. Métricas de Rendimiento",
             "6. Ajuste de Hiperparámetros",
-            "7. Preprocesamiento de Datos"
+            "7. Preprocesamiento de Datos",
+            "8. Modelos Lineales"
         ]
     )
 
@@ -56,6 +58,8 @@ def main():
         ajuste_hiperparametros.render()
     elif capitulo == "7. Preprocesamiento de Datos":
         preproceso.render()
+    elif capitulo == "8. Modelos Lineales":
+        modelos_lineales.render()
 
 if __name__ == "__main__":
     main()
